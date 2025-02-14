@@ -50,7 +50,7 @@ function atualizaTabela() {//cria a funcao que atualiza a tabela
 function atualizaMediaFinal() {//cria a funcao que atualiza a media
     const mediaFinal = calculaMediaFinal() //a varaivael media final recebe o valor o retorno da funcao calculaMediaFinal()
     
-    document.getElementById('media-final-valor').innerHTML = mediaFinal //insere o valor da media final no elemento controlado pela id
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2) //insere o valor da media final no elemento controlado pela id
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado //compara o valor da media final no elemento controlado pela id e decide por um ou outra variavel de resuiltado
 }
 
